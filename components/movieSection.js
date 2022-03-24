@@ -24,7 +24,6 @@ function MovieSection({ title, data, onPress }) {
             />
             <View style={styles.cardInnerContainer}>
                 <Text style={styles.cardTitle}>{item.title}</Text>
-                <Text style={styles.cardDescription}>{item.plot}</Text>
             </View>
         </TouchableOpacity>
     );
@@ -69,6 +68,7 @@ const styles = StyleSheet.create({
     cardImage: { width: "100%", height: "100%", position: "absolute" },
     cardInnerContainer: {
         padding: 10,
+        alignItems: 'baseline'
     },
     cardTitle: {
         fontFamily: "Roboto",
